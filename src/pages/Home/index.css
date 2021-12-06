@@ -1,0 +1,75 @@
+.first-photo{
+  height: 290px;
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.container-card-location{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 100%;
+  gap: 10px;
+  padding: 0;
+  transform: translateX(-2.5rem);
+}
+
+footer{
+  display: flex;
+  place-items: center;
+  color: white;
+  height: 67px;
+  background-color: #2C2C2C;
+}
+footer > p {
+  margin: auto;
+}
+
+.last-section_title{
+  font-size: 20px;
+}
+
+.last-section_redes > .iconify{
+  color: #A3A700;
+  margin: 0.5em;
+  height: 28px;
+  width: 28px;
+}
+
+.last-section_contact{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.last-section_contact > p{
+  font-size: 16px;
+}
+
+.last-section_contact > .iconify{
+  color: #A3A700;
+  height: 28px;
+  width: 28px;
+}
+
+.link-wa{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+}
+.link-wa > .iconify{
+  padding: 0px;
+  box-shadow:  0px 0px 10px 10px rgba(128, 128, 128, 0.3);
+  border-top-right-radius:50%;
+  border-top-left-radius:50%;
+  border-bottom-right-radius:50%;
+ 
+}
+
+@media screen and (min-width: 480px){
+  .first-photo{
+    height: 380px;
+  }
+}

@@ -1,0 +1,102 @@
+.logo{
+  height: 167px;
+  width: 167px;
+  object-fit: contain;
+  transform: translateY(20px);
+  margin: 0;
+  margin-left: -10px;
+  padding: 0;
+}
+.Banner{
+  align-items: center;
+  background-color: #161616;
+  color: #CFD300;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  height: 81px;
+  justify-content: center;
+  max-width: 1fr;
+  padding: 0 3px;
+  width: 1fr;
+}
+
+.Banner-nav_items{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  max-width:100% ;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin-left: -20px;
+  flex-wrap: wrap;
+}
+
+.Banner-nav_items > li{
+  padding: 3px;
+}
+
+.Button-Turno{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate( calc(50vmin - 29px), calc(85px + 32px - 29px / 2 )) ;
+  height: 29px;
+  width: 110px;
+  background-color: #CFD300;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid black;
+  box-shadow: 0px 3px 10px 1px black, 
+              inset 0px 0px 5px 0px rgba(255, 255, 255, 1);
+  align-items: center;
+  transition: background-color .4s;
+  
+}
+.Button-Turno:hover{
+  background-color: #8c8f03;
+}
+
+.Button-Turno > p{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Button-Turno > .iconify{
+  color: #000
+}
+
+
+@media screen and (min-width: 480px){
+  .Banner{
+    height: 121px;
+    font-size: 18px;
+  }
+  .Button-Turno{
+    width: 180px;
+    height: 40px;
+    transform: translate( calc(50vmin), 170px );
+  }
+
+  .Button-Turno > p {
+    font-size: 20px;
+  }
+
+  .Button-Turno > .iconify{
+    font-size: 22px;
+  }
+
+  .logo{
+    height: 187px;
+    width: 187px;
+    object-fit: contain;  
+    transform: translateY(16px);
+  }
+}
