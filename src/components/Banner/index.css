@@ -38,53 +38,57 @@
 }
 
 .Banner-nav_items > li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .3em;
+  cursor: pointer;
   padding: 3px;
+}
+.Banner-nav_items > li > a{
+  text-decoration: none;
+  color: #CFD300;
+} 
+.Banner-nav_items > li > span{
+  width: 0%;
+  background-color: #CFD300;
+  height: 1px;
+  transition: width ease .5s;
+}
+.Banner-nav_items > li:hover > span{
+  width: 100%;
 }
 
 .Button-Turno{
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate( calc(50vmin - 29px), calc(85px + 32px - 29px / 2 )) ;
-  height: 29px;
-  width: 110px;
-  background-color: #CFD300;
-  display: flex;
-  justify-content: center;
-  gap: 3px;
-  border: 1px solid black;
-  box-shadow: 0px 3px 10px 1px black, 
-              inset 0px 0px 5px 0px rgba(255, 255, 255, 1);
   align-items: center;
-  transition: background-color .4s;
-  
+  background-color: #CFD300;
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: 0px 3px 10px 1px black;
+  cursor: pointer;
+  color: #161616;
+  display: flex;
+  transition: background-color .3s;
+  padding: .5em;
 }
 .Button-Turno:hover{
   background-color: #8c8f03;
 }
 
-.Button-Turno > p{
+.Button-Turno > span{
   font-size: 14px;
   font-weight: bold;
 }
 
 .Button-Turno > .iconify{
-  color: #000
+  color: #161616
 }
-
 
 @media screen and (min-width: 480px){
   .Banner{
     height: 121px;
     font-size: 18px;
   }
-  .Button-Turno{
-    width: 180px;
-    height: 40px;
-    transform: translate( calc(50vmin), 170px );
-  }
-
   .Button-Turno > p {
     font-size: 20px;
   }

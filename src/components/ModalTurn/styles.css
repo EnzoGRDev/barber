@@ -1,0 +1,64 @@
+.back-modal{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+}
+
+.modal{
+  animation: showing;
+  animation-duration: .3s;
+  backdrop-filter: blur(111px);
+  background-color: rgb(41, 40, 40);
+  border-radius: 11px;
+  height: 90vh;
+  left: 5%;
+  padding: 1em;
+  top: 20px;
+  width: 80%;
+}
+
+.modal > header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal > form {
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal > form > input{
+  font-size: 1.3em;
+  padding: .5em .2em;
+}
+
+.modal > form > label{
+  padding: 1em 0;
+}
+
+.hidden{
+  display: none;
+  opacity: 0;
+}
+
+@media (min-width: 360px) {
+  .modal{
+    width: 274px ;
+  }
+}
+
+@keyframes showing {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}

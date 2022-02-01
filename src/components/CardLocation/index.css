@@ -1,6 +1,8 @@
 .card-location{
+  border-radius: 3px;
   width: 100%;
   background-color: #CFD300;
+  box-shadow: 0px 6px 6px 0px rgb(160 160 160);
 }
 
 .card-location > h2{

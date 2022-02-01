@@ -1,12 +1,12 @@
-import './index.css'
+import { Link } from "react-router-dom"
+import "./index.css"
 
-export default function ButtonTurno(){
-  return(
-    
-    <button className="Button-Turno">
+export default function ButtonTurno() {
+  return (
+    <Link className="Button-Turno" to={"/turn"}>
       <span className="iconify" data-icon="ant-design:star-filled"></span>
-      <p>TURNOS</p>
+      <span>TURNOS</span>
       <span className="iconify" data-icon="ant-design:star-filled"></span>
-    </button>
+    </Link>
   )
 }
